@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to her</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+      <div id="profile">
+        <div class="spotifywrapper"><style>.spotifywrapper{background:transparent;position:relative}.spotifywrapper iframe{border:0;position:relative;z-index:2}.spotifywrapper a{color:rgba(0,0,0,0);position:absolute;left:0;top:0;z-index:0}</style><a href="https://www.taxgoo.com">Tax Goo</a><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7eYEQnY6Lzh3Y8jSOt3xEF?utm_source=generator&theme=0" width="300" height="150" padding-right="50px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+      </div id='label'>
+      <p id="p">Tempo Juntos...</p>
+      <div> <div id="label">
+        <title>Tempo Decorrido</title>
+        <style>
+            #elapsed-time {
+                display: flex;
+                gap: 20px;
+                font-size: 24px;
+                font-family: Arial, sans-serif;
+            }
+            .time-unit {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .time-value {
+                font-weight: bold;
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="elapsed-time">
+            <div class="time-unit"><div class="time-value" id="days">153</div><div>dias</div></div>
+            <div class="time-unit"><div class="time-value" id="hours">17</div><div>horas</div></div>
+            <div class="time-unit"><div class="time-value" id="minutes">57</div><div>minutos</div></div>
+            <div class="time-unit"><div class="time-value" id="seconds">36</div><div>segundos</div></div>
+        </div>
+    
+        <script>
+
+    
+                function updateElapsedTime() {
+                    const now = new Date();
+                    const timeDiff = now - startTime;
+    
+                    if (timeDiff < 0) {
+                        document.getElementById('elapsed-time').textContent = "Essa data ainda não chegou.";
+                        return;
+                    }
+    
+                    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+                    const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+                    const seconds = Math.floor((timeDiff / 1000) % 60);
+    
+                    document.getElementById('days').textContent = days;
+                    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                }
+    
+                updateElapsedTime();
+                setInterval(updateElapsedTime, 1000);
+            
+    
+            window.onload = startElapsedTimeClock;
+        </script>
+      </div>
+
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a href="cantadas.html">Galeria</a>
+        </li>
+      </ul>
+
+
+      <div class="card">
+        <div class="corner-deco corner-top-left"></div>
+        <div class="corner-deco corner-top-right"></div>
+        <div class="corner-deco corner-bottom-left"></div>
+        <div class="corner-deco corner-bottom-right"></div>
+        
+        <div class="title">Para Gabrielle <span class="heart">♥</span> </div>
+        <div class="text">
+          Eu li sua mensagem e confesso que me doeu demais. Doeu porque sei que você tá certa. Dói porque eu vejo que cometi erros que machucaram alguém que eu realmente gosto muito. E mais do que isso, alguém que sempre me tratou com respeito e carinho. <br> <br>
+          Eu não vou tentar justificar o que fiz. Sei que meu ciúmes passou do limite, que falei coisas que não deveria, e que agi de forma imatura em vários momentos. Me arrependo muito por ter te colocado numa posição que você não merecia estar e eu sei o quanto isso te machucou. Em nenhum momento essa foi a intenção, mas eu entendo que intenção não apaga o impacto. Você tem razão em tudo que disse. Você sempre foi correta comigo, nunca me deu motivo pra desconfiar de nada e ainda assim, eu errei <br> <br>
+          Queria te pedir desculpa de verdade, do fundo do coração. Porque eu sei o quanto você é uma mulher incrível e forte… e que merece muito mais do que o que eu fui capaz de te oferecer nesses momentos. <br> <br>
+          Dói saber que você se sentiu tão ferida por mim, sendo que tudo o que eu queria era te fazer bem e no fim, acabei fazendo o oposto. <br> <br>
+          Mas sabe o que mais me destrói? É pensar em tudo o que a gente viveu junto. Todos os momentos que passamos lado a lado… Não foram só dias, foram memórias marcadas no meu coração. Lembro das vezes que você não tava bem, as vezes com aquelas colicas que são as mais dolorosas, e eu faltava aula só pra estar com você. E não era sacrifício nenhum, era onde eu queria estar, cuidando de você, fazendo brincadeiras bestas pra te animar so pra te ver sorrir mesmo com dor. Isso pra mim era amor. Ainda é. <br> <br>
+          A gente viveu coisas lindas. Risadas do nada, brincadeiras bobas, promessas de dedinhos, conversas longas, planos bobos, planos sérios. Não foi só um namoro, foi uma história. E por mais que eu tenha errado, o sentimento que eu tenho por você continua muito forte. Eu ainda te amo. <br> <br>
+
+          Sei que você tá machucada, e que essa decisão veio depois de pensar muito. Mas queria saber, sinceramente, será que ainda existe espaço pra mais uma chance? Uma chance com mudanças reais, com mais maturidade, com mais respeito da minha parte? 
+          Não tô pedindo por impulso, nem pra te prender em algo que te faça mal. Tô perguntando porque você ainda importa demais pra mim. E se houver alguma possibilidade, mesmo que pequena, de reconstruir com mais leveza e amor, eu quero tentar e fazer diferente. <br> <br>
+          *PS - Da uma olhada na "Galeria", eu reuni algumas dos nossos momentos mais lindos e meus preferidos <3.
+
+          <p id="end"> Com amor: Ravi ♥</p>
+        </div>
+      </div>
+
+
+      </div>
+        <footer>Eu te amo <3</footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      // <![CDATA[
+      var colours=new Array('#f00', '#f06', '#f0f', '#f6f', '#f39', '#f9c'); // colours of the hearts
+      var minisize=10; // smallest size of hearts in pixels
+      var maxisize=20; // biggest size of hearts in pixels
+      var hearts=100; // maximum number of hearts on screen
+      var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+      
+      /*****************************
+      *JavaScript Love Heart Cursor*
+      *  (c)2013+ mf2fm web-design *
+      *   http://www.mf2fm.com/rv  *
+      *  DON'T EDIT BELOW THIS BOX *
+      *****************************/
+      var x=ox=400;
+      var y=oy=300;
+      var swide=800;
+      var shigh=600;
+      var sleft=sdown=0;
+      var herz=new Array();
+      var herzx=new Array();
+      var herzy=new Array();
+      var herzs=new Array();
+      var kiss=false;
+      
+      if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+        var oldonload=window.onload;
+        if (typeof(oldonload)!='function') window.onload=funky;
+        else window.onload=function() {
+          if (oldonload) oldonload();
+          funky();
+        }
+      }
+      
+      addRVLoadEvent(mwah);
+      
+      function mwah() { if (document.getElementById) {
+        var i, heart;
+        for (i=0; i<hearts; i++) {
+          heart=createDiv("auto", "auto");
+          heart.style.visibility="hidden";
+        heart.style.zIndex=(over_or_under=="over")?"1001":"0";
+          heart.style.color=colours[i%colours.length];
+        heart.style.pointerEvents="none";
+          if (navigator.appName=="Microsoft Internet Explorer") heart.style.filter="alpha(opacity=75)";
+          else heart.style.opacity=0.45;
+          heart.appendChild(document.createTextNode(String.fromCharCode(9829)));
+          document.body.appendChild(heart);
+          herz[i]=heart;
+        herzy[i]=false;
+        }
+        set_scroll();
+        set_width();
+        herzle();
+      }}
+      
+      function herzle() {
+        var c;
+        if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+          ox=x;
+          oy=y;
+          for (c=0; c<hearts; c++) if (herzy[c]===false) {
+          herz[c].firstChild.nodeValue=String.fromCharCode(9829);
+            herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+            herz[c].style.top=(herzy[c]=y-minisize)+"px";
+            herz[c].style.fontSize=minisize+"px";
+          herz[c].style.fontWeight='normal';
+            herz[c].style.visibility='visible';
+            herzs[c]=minisize;
+            break;
+          }
+        }
+        for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+        setTimeout("herzle()", 30);
+      }
+      
+      document.onmousedown=pucker;
+      document.onmouseup=function(){clearTimeout(kiss);};
+      
+      function pucker() {
+        ox=-1;
+        oy=-1;
+        kiss=setTimeout('pucker()', 100);
+      }
+      
+      function blow_me_a_kiss(i) {
+        herzy[i]-=herzs[i]/minisize+i%2;
+        herzx[i]+=(i%5-2)/5;
+        if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+          herz[i].style.visibility="hidden";
+          herzy[i]=false;
+        }
+        else if (herzs[i]>minisize+1 && Math.random()<2.5/hearts) break_my_heart(i);
+        else {
+          if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+          herz[i].style.top=herzy[i]+"px";
+          herz[i].style.left=herzx[i]+"px";
+        }
+      }
+      
+      function break_my_heart(i) {
+        var t;
+        herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+        herz[i].style.fontWeight='bold';
+          herzy[i]=false;
+        for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+        setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+      }
+      
+      document.onmousemove=mouse;
+      function mouse(e) {
+        if (e) {
+          y=e.pageY;
+          x=e.pageX;
+        }
+        else {
+          set_scroll();
+          y=event.y+sdown;
+          x=event.x+sleft;
+        }
+      }
+      
+      window.onresize=set_width;
+      function set_width() {
+        var sw_min=999999;
+        var sh_min=999999;
+        if (document.documentElement && document.documentElement.clientWidth) {
+          if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+          if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+        }
+        if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+          if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+          if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+        }
+        if (document.body.clientWidth) {
+          if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+          if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+        }
+        if (sw_min==999999 || sh_min==999999) {
+          sw_min=800;
+          sh_min=600;
+        }
+        swide=sw_min;
+        shigh=sh_min;
+      }
+      
+      window.onscroll=set_scroll;
+      function set_scroll() {
+        if (typeof(self.pageYOffset)=='number') {
+          sdown=self.pageYOffset;
+          sleft=self.pageXOffset;
+        }
+        else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+          sdown=document.body.scrollTop;
+          sleft=document.body.scrollLeft;
+        }
+        else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+          sleft=document.documentElement.scrollLeft;
+          sdown=document.documentElement.scrollTop;
+        }
+        else {
+          sdown=0;
+          sleft=0;
+        }
+      }
+      
+      function createDiv(height, width) {
+        var div=document.createElement("div");
+        div.style.position="absolute";
+        div.style.height=height;
+        div.style.width=width;
+        div.style.overflow="hidden";
+        div.style.backgroundColor="transparent";
+        return (div);
+      }
+      // ]]>
+      </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
